@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('./fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+body{
+    transition-duration: 1s;
+    margin: 0;
+    padding: 0;
+    font-family: 'MinhaFonte', sans-serif;
+    box-sizing: border-box;
+    background-color: #13131F;
+    color: white;
+}
+
+body, html, button, a {
+    color: white;
+}
+
+
+.DarkMode {
+    transition-duration: 1s;
+    background-color: white;
+    color: black;
+}
+
+.DarkMode button, .DarkMode a {
+    transition-duration: 1s;
+    color: black;
+}
+
+.Titulo {
+    display: none; /* Esconder por padrão */
+}
+
+.DarkMode main{
+    border-bottom: 2px solid #00A02D;
+
+}
+
+
+main {
+    width: 100%;
+    top: 0px;
+    padding: 40px 0px; /* para evitar que o conteúdo fique embaixo do header */
+    border-bottom: 3px solid #004A15;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(23, 92, 2, 0.051);
+}
+
+.header-wrapper {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header-wrapper .menu-button {
+    display: none;
+}
+
+.header-wrapper .nav {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-wrapper .nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.header-wrapper .nav-link:hover {
+    transition-duration: 0.5s;
+    color: #00A02D;
+}
+
+.header-wrapper .nav .nav-link:nth-child(5) {
+    cursor: default;
+}
+.header-wrapper .nav .nav-link:nth-child(5):hover {
+    color: aliceblue;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 30px 20px; /* para evitar que o conteúdo fique embaixo do header */
+    }
+
+    .header-wrapper {
+        padding-top: 10px;
+        justify-content: space-between;
+    }
+
+    .header-wrapper .menu-button {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        left: 20px;
+    }
+
+    .Titulo {
+        display: block; /* Mostrar no celular */
+        position: absolute;
+        left: 34%;
+        font-size: 14px;
+    }
+
+    .header-wrapper .nav {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        width: 100%;
+        padding: 10px;
+        display: none;
+        align-items: flex-start; /* Alinha os links à esquerda */
+    }
+
+    .header-wrapper .nav.open {
+        border-radius: 20px;
+        width: 30%;
+        background-color: rgba(0,160,45, 0.91);
+        display: flex;
+    }
+
+    .header-wrapper .nav .nav-link:nth-child(5) {
+        display: none;
+    }
+}

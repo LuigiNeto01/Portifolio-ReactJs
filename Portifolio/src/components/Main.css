@@ -1,0 +1,105 @@
+.MainPage {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+}
+.LeftContainer img{
+    background-color: rgba(157, 0, 0, 0);
+    filter: brightness(90%);
+    padding: 10%;
+    float: right;
+}
+.RightContainer{
+    float: right;
+    width: 50%;
+}
+
+.LeftContainer{
+    float: left;
+    align-content: end;
+    width: 50%;
+}
+
+.TextoNome{
+    width: 100%;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 40px;
+}
+
+.MeuNome{
+    font-size: 55px;
+    color: #018d29;
+}
+
+.Curriculo {
+    margin-left: 20px;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid;
+    transition: all 0.3s;
+}
+
+
+DarkMode .Curriculo{
+    background: #090909;
+}
+
+  .Curriculo:active {
+    color: #666;
+    box-shadow: none 4px 4px 12px #c5c5c5, none -4px -4px 12px #ffffff;
+  }
+  .botoes {
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+    opacity: 0;
+    filter: blur(10px);
+  }
+  
+  .botoes.visible {
+    margin-left: 30%;
+    opacity: 1;
+    filter: blur(0);
+  }
+  
+
+@media (max-width: 768px) {
+
+    .Curriculo {
+        width: 80%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .botoes.visible {
+        margin-left: 10%;
+        opacity: 1;
+        filter: blur(0);
+      }
+    .MainPage {
+        margin-top: 15%;
+        flex-direction: column;
+    }
+    .RightContainer, .LeftContainer {
+        width: 100%;
+    }
+
+    .LeftContainer img{
+        width: 100%;
+        padding: 0%;
+    }
+    .TextoNome{
+        width: 100%;
+        text-align: center;
+        margin-top: 0%;
+        font-size: 35px;
+
+    }
+    .MeuNome {
+        font-size: 25px;
+      }
+}
