@@ -3,6 +3,7 @@ import './Main.css';
 import ImagemPrincipal from './src/ImagemPrincipal.png';
 import Typewriter from 'typewriter-effect/dist/core';
 import './Header.css';
+
 const MainMenu = () => {
   const [showButton, setShowButton] = useState(false);
 
@@ -31,7 +32,7 @@ const MainMenu = () => {
   }, []);
 
   return (
-    <div className="MainPage">
+    <div className="MainPage" id='home'>
       <div className="LeftContainer">
         <img src={ImagemPrincipal} alt="1" />
       </div>

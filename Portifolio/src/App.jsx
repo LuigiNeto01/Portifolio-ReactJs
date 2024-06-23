@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './components/Header';
 import MainMenu from './components/Main';
+import AboutMe from './components/AboutMe';
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
       <Header />
       </main>
       <MainMenu />
-      
+      <AboutMe />
     </div>
   );
 };

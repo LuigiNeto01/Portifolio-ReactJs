@@ -4,6 +4,10 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  html {
+    scroll-behavior: smooth;
+}
 body{
     transition-duration: 1s;
     margin: 0;
@@ -41,6 +45,8 @@ body, html, button, a {
 
 
 main {
+    backdrop-filter: blur(10px); /* Aplica um desfoque de 8 pixels */
+
     width: 100%;
     top: 0px;
     padding: 40px 0px; /* para evitar que o conteúdo fique embaixo do header */
@@ -51,6 +57,7 @@ main {
 }
 
 .header-wrapper {
+    
     position: fixed;
     top: 20px;
     left: 0;
@@ -60,6 +67,7 @@ main {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    
 }
 
 .header-wrapper .menu-button {
@@ -67,7 +75,6 @@ main {
 }
 
 .header-wrapper .nav {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,11 +102,13 @@ main {
 @media (max-width: 768px) {
     main {
         padding: 30px 20px; /* para evitar que o conteúdo fique embaixo do header */
+        
     }
 
     .header-wrapper {
         padding-top: 10px;
         justify-content: space-between;
+        
     }
 
     .header-wrapper .menu-button {
@@ -120,24 +129,33 @@ main {
     }
 
     .header-wrapper .nav {
+        
+        background-color: rgba(57, 137, 57, 0.838);
+        backdrop-filter: blur(10px);
         flex-direction: column;
         position: absolute;
         top: 60px;
-        left: 10px;
-        width: 100%;
         padding: 10px;
         display: none;
-        align-items: flex-start; /* Alinha os links à esquerda */
+        text-align: center;
+        backdrop-filter: blur(20px); /* Aplica um desfoque de 10 pixels */
+
     }
+    
 
     .header-wrapper .nav.open {
+        backdrop-filter: blur(10px); /* Aplica um desfoque de 8 pixels */
+        
         border-radius: 20px;
-        width: 30%;
-        background-color: rgba(0,160,45, 0.91);
         display: flex;
     }
 
     .header-wrapper .nav .nav-link:nth-child(5) {
         display: none;
     }
+    .nav.open{
+        backdrop-filter: blur(20px); /* Aplica um desfoque de 10 pixels */
+        width: 70%;
+    }
+  
 }
