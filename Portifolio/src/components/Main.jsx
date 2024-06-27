@@ -3,6 +3,7 @@ import './Main.css';
 import ImagemPrincipal from './src/ImagemPrincipal.png';
 import Typewriter from 'typewriter-effect/dist/core';
 import './Header.css';
+import text from './json/texts.json'
 
 const MainMenu = () => {
   const [showButton, setShowButton] = useState(false);
@@ -17,13 +18,19 @@ const MainMenu = () => {
 
     typewriter
       .typeString('Olá eu sou o <br /><span className="MeuNome" style="color: #018d29; font-size: 55px;">Luigi Neto Figueiredo</span><br />')
-      .typeString('Dev Front-End')
+      
+      .typeString(text.areas.frontend)
+
       .pauseFor(350)
       .deleteChars(9)
-      .typeString('Back-End')
+
+      .typeString(text.areas.backend)
+
       .pauseFor(350)
       .deleteChars(8)
-      .typeString('Full Stack')
+
+      .typeString(text.areas.fullstack)
+
       .pauseFor(300)
       .callFunction(() => {
         setShowButton(true);
@@ -39,8 +46,10 @@ const MainMenu = () => {
       <div className="RightContainer">
         <h1 id="app" className="TextoNome"></h1>
         <div className={`botoes ${showButton ? 'visible' : ''}`}>
-          <button className='Curriculo'>Download CV</button>
-          <button className='Curriculo'>Contato</button>
+
+          <button className='Curriculo'>{text.buttons.curriculo}</button>
+          <button className='Curriculo'>{text.buttons.contato}</button>
+
         </div>
       </div>
     </div>

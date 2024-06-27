@@ -157,5 +157,12 @@ main {
         backdrop-filter: blur(20px); /* Aplica um desfoque de 10 pixels */
         width: 70%;
     }
-  
+    .header-wrapper .nav-link:hover {
+        transition-duration: 0.5s;
+        color: white;
+    }
+    .DarkMode .header-wrapper .nav-link:hover {
+        transition-duration: 0.5s;
+        color: black;
+    }
 }

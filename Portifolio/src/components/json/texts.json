@@ -1,0 +1,47 @@
+{
+    "title": "Projetos",
+    "subtitle": "Alguns projetos de cada área de desenvolvimento",
+    "projects": {
+      "fullStack": "Full-Stack",
+      "frontEnd": "Front-End",
+      "backEnd": "Back-End"
+    },
+    "imagePath": "E:/Trabalho/Portifolio-React/Portifolio/src/components/src/ImagemPrincipal.png",
+
+    "areas": {
+      "frontend": "Dev Front-End",
+      "backend": "Back-End",
+      "fullstack": "Full Stack"
+  },
+    "buttons": {
+      "curriculo": "Download CV",
+      "contato": "Contact"
+    },
+
+    "aboutMe": {
+      "title": "Sobre mim",
+      "descricao": "Desenvolvedor Full Stack com vasta experiência em ReactJS, JavaScript, Python, Java, C#, SQL e APIs. Sou apaixonado por encontrar soluções inovadoras que aprimorem o ambiente de trabalho. Possuo sólida experiência em desenvolvimento de automações (RPA), focando sempre em metodologias reutilizáveis e de fácil compreensão. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas."
+    },
+    "header": {
+      "title": "Portifólio",
+      "home": "Home",
+      "about": "About",
+      "ability": "Ability",
+      "contact": "Contact",
+      "split": "///",
+      "darkmode": "Dark Mode"
+    },
+
+    "projetoFullStack": {
+      "titulo": "Sobre o projeto",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra est vel nunc mollis tempus. Mauris ullamcorper rhoncus ex, eget lacinia eros ultricies sed. In luctus, neque nec vulputate imperdiet, ligula magna luctus sem, ut eleifend arcu risus sed sapien. Pellentesque molestie augue quis velit pulvinar, a venenatis ante dapibus. Etiam et tristique nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae lectus non diam dapibus pellentesque vel non leo. Donec sodales faucibus mauris. Nunc hendrerit urna sed ante malesuada consectetur. Donec vestibulum non ligula ac dapibus. Maecenas egestas posuere sem, vel rhoncus sem semper sit amet. Praesent in ipsum quis felis volutpat cursus."
+    },
+    "projetoFrontEnd": {
+      "titulo": "Sobre o projeto",
+      "description": "Lorem ipsum dolo . Curabitur viverra est vel nunc mollis tempus. Mauris ullamcorper rhoncus ex, eget lacinia eros ultricies sed. In luctus, neque nec vulputate imperdiet, ligula magna luctus sem, ut eleifend arcu risus sed sapien. Pellentesque molestie augue quis velit pulvinar, a venenatis ante dapibus. Etiam et tristique nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae lectus non diam dapibus pellentesque vel non leo. Donec sodales faucibus mauris. Nunc hendrerit urna sed ante malesuada consectetur. Donec vestibulum non ligula ac dapibus. Maecenas egestas posuere sem, vel rhoncus sem semper sit amet. Praesent in ipsum quis felis volutpat cursus."
+    },
+    "projetoBackEnd": {
+      "titulo": "Sobre o projeto",
+      "description": "Lorem ipsum dolor sit amet,   felis volutpat cursus.Lorem ipsum dolor sit amet,   felis volutpat cursus.Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,   felis volutpat cursus.  felis volutpat cursus."
+    }
+}

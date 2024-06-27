@@ -1,7 +1,7 @@
 // Header.js
 import React, { useState } from 'react';
 import './Header.css';
-
+import texts from './json/texts.json'
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -19,15 +19,15 @@ const Header = () => {
         ☰
       </button>
       <div className="Titulo">
-        <h1>Portifólio</h1>
+        <h1>{texts.header.title}</h1>
       </div>
       <nav className={`nav ${menuOpen ? 'open' : ''}`}>
-        <a className="nav-link" href="#home">Home</a>
-        <a className="nav-link" href="#about">About</a>
-        <a className="nav-link" href="#services">Services</a>
-        <a className="nav-link" href="#contact">Contact</a>
-        <a className="nav-link">///</a>
-        <a className="nav-link" onClick={DarkMode}>DarkMode</a>
+        <a className="nav-link" href="#home">{texts.header.home}</a>
+        <a className="nav-link" href="#about">{texts.header.about}</a>
+        <a className="nav-link" href="#ability">{texts.header.ability}</a>
+        <a className="nav-link" href="#contact">{texts.header.contact}</a>
+        <a className="nav-link">{texts.header.split}</a>
+        <a className="nav-link" onClick={DarkMode}>{texts.header.darkmode}</a>
       </nav>
     </header>
   );
