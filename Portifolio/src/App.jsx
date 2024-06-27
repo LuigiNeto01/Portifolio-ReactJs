@@ -14,6 +14,7 @@ const App = () => {
       <MainMenu />
       <AboutMe />
       <Projetos /> 
+     
     </div>
   );
 };

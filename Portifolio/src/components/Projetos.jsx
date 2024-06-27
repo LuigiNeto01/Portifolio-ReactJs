@@ -11,7 +11,6 @@ const Projetos = () => {
     const showProjects = (projectType) => {
         setSelectedProject(prevProject => prevProject === projectType ? '' : projectType);
     }
-
     const renderImage = () => {
         switch (selectedProject) {
             case texts.projects.fullStack:
