@@ -1,6 +1,6 @@
 // Header.js
 import React, { useState } from 'react';
-import './Header.css';
+import './Main.css';
 import texts from './json/texts.json'
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);

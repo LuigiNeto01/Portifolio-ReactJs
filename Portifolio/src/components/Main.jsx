@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './Main.css';
 import ImagemPrincipal from './src/ImagemPrincipal.png';
 import Typewriter from 'typewriter-effect/dist/core';
-import './Header.css';
 import text from './json/texts.json'
 
 const MainMenu = () => {
