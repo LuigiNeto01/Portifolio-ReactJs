@@ -16,7 +16,7 @@ const MainMenu = () => {
     });
 
     typewriter
-      .typeString('Olá eu sou o <br /><span className="MeuNome" style="color: #018d29; font-size: 55px;">Luigi Neto Figueiredo</span><br />')
+      .typeString('Hello, my name is<br /><span className="MeuNome" style="color: #018d29; font-size: 55px;">Luigi Neto Figueiredo</span><br />')
       
       .typeString(text.areas.frontend)
 

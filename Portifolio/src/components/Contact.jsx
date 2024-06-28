@@ -20,8 +20,8 @@ const ContactForm = () => {
                     </div>
                     <div className="descriptionDisplay">
                         <ul>
-                            <li>Seguidores:</li>
-                            <li>Repositórios:</li>
+                            <li>Followers:</li>
+                            <li>Repos:</li>
                         </ul>
                     </div>
                     </a>
@@ -36,7 +36,7 @@ const ContactForm = () => {
                     </div>
                     <div className="descriptionDisplay">
                         <ul>
-                            <li>Conexões:</li>
+                            <li>Connections:</li>
                             <li>Posts:</li>
                         </ul>
                     </div>
@@ -50,7 +50,7 @@ const ContactForm = () => {
                         <h1>WhatsApp</h1>
                     </div>
                     <div className="descriptionDisplay">
-                        <h2>Para um contatos mais direto</h2>
+                        <h2>For more direct contact</h2>
                     </div></a>
                 </div>
 
@@ -62,7 +62,7 @@ const ContactForm = () => {
                         <h1>Email</h1>
                     </div>
                     <div className="descriptionDisplay">
-                       <h2>Para um contatos mais profissionais</h2>
+                       <h2>For more professional contacts</h2>
                     </div>
                     </a>
                 </div>
