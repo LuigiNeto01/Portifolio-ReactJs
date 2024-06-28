@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Main.css';
 import ImagemPrincipal from './src/ImagemPrincipal.png';
 import Typewriter from 'typewriter-effect/dist/core';
-import text from './json/texts.json'
+import text from './json/texts.json';
 
 const MainMenu = () => {
   const [showButton, setShowButton] = useState(false);
@@ -37,6 +37,10 @@ const MainMenu = () => {
       .start();
   }, []);
 
+  const handleScrollToContact = () => {
+    document.getElementById('contact').scrollIntoView();
+  };
+
   return (
     <div className="MainPage" id='home'>
       <div className="LeftContainer">
@@ -47,7 +51,7 @@ const MainMenu = () => {
         <div className={`botoes ${showButton ? 'visible' : ''}`}>
 
           <button className='Curriculo'>{text.buttons.curriculo}</button>
-          <button className='Curriculo'>{text.buttons.contato}</button>
+          <button className='Curriculo' onClick={handleScrollToContact}>{text.buttons.contato}</button>
 
         </div>
       </div>
