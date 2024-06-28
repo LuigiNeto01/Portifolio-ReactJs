@@ -175,7 +175,7 @@ main {
 .MainPage {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5%;
+    margin-top: 0%;
     width: 100%;
     height: 100vh;
 
@@ -184,11 +184,12 @@ main {
 .LeftContainer img {
     background-color: rgba(157, 0, 0, 0);
     filter: brightness(90%);
-    padding: 10%;
+    padding-left: 10%;
     float: right;
 }
 
 .RightContainer {
+    margin-top: 5%;
     float: right;
     width: 50%;
 }
