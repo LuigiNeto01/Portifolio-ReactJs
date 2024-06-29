@@ -78,9 +78,9 @@ const Projetos = () => {
             <div className="fullarea">
                 <div className="rightHab">
                     <ul>
-                        <li onClick={() => showProjects(texts.projects.frontEnd)}>{texts.projects.frontEnd}</li>
-                        <li onClick={() => showProjects(texts.projects.backEnd)}>{texts.projects.backEnd}</li>
-                        <li onClick={() => showProjects(texts.projects.fullStack)}>{texts.projects.fullStack}</li>
+                        <li><button className='BotaoFoda'   onClick={() => showProjects(texts.projects.frontEnd)}>{texts.projects.frontEnd}</button></li>
+                        <li><button className='BotaoFoda'   onClick={() => showProjects(texts.projects.backEnd)}>{texts.projects.backEnd}</button></li>
+                        <li><button className='BotaoFoda'   onClick={() => showProjects(texts.projects.fullStack)}>{texts.projects.fullStack}</button></li>
                     </ul>
                 </div>
                 <div className="leftHab">

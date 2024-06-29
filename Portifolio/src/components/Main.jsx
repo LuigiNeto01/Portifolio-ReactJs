@@ -3,10 +3,20 @@ import './Main.css';
 import ImagemPrincipal from './src/ImagemPrincipal.png';
 import Typewriter from 'typewriter-effect/dist/core';
 import text from './json/texts.json';
+import pdf from './src/CV-LuigiNeto.pdf'
 
 const MainMenu = () => {
   const [showButton, setShowButton] = useState(false);
 
+      const handleDownload = () => {
+        const pdfUrl = pdf; // Substitua pelo caminho do seu PDF
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.setAttribute('download', 'CV-LuigiNeto.pdf'); // Substitua pelo nome do arquivo que deseja
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }; 
   useEffect(() => {
     var app = document.getElementById('app');
 
@@ -50,7 +60,7 @@ const MainMenu = () => {
         <h1 id="app" className="TextoNome"></h1>
         <div className={`botoes ${showButton ? 'visible' : ''}`}>
 
-          <button className='Curriculo'>{text.buttons.curriculo}</button>
+          <button className='Curriculo' onClick={handleDownload}>{text.buttons.curriculo}</button>
           <button className='Curriculo' onClick={handleScrollToContact}>{text.buttons.contato}</button>
 
         </div>

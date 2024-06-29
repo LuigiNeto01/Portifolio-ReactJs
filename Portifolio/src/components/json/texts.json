@@ -1,6 +1,6 @@
 {
   "title": "Projects",
-  "subtitle": "Some projects from each development area",
+  "subtitle": "Some projects from each development area ( just click it )",
   "projects": {
     "fullStack": "Full-Stack",
     "frontEnd": "Front-End",
@@ -30,15 +30,50 @@
     "darkmode": "Dark Mode"
   },
   "projetoFullStack": {
-    "titulo": "About the project",
+    "titulo": "About the full stack project",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra est vel nunc mollis tempus. Mauris ullamcorper rhoncus ex, eget lacinia eros ultricies sed. In luctus, neque nec vulputate imperdiet, ligula magna luctus sem, ut eleifend arcu risus sed sapien. Pellentesque molestie augue quis velit pulvinar, a venenatis ante dapibus. Etiam et tristique nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae lectus non diam dapibus pellentesque vel non leo. Donec sodales faucibus mauris. Nunc hendrerit urna sed ante malesuada consectetur. Donec vestibulum non ligula ac dapibus. Maecenas egestas posuere sem, vel rhoncus sem semper sit amet. Praesent in ipsum quis felis volutpat cursus."
   },
   "projetoFrontEnd": {
-    "titulo": "About the project",
+    "titulo": "About the front-end project",
     "description": "Lorem ipsum dolo. Curabitur viverra est vel nunc mollis tempus. Mauris ullamcorper rhoncus ex, eget lacinia eros ultricies sed. In luctus, neque nec vulputate imperdiet, ligula magna luctus sem, ut eleifend arcu risus sed sapien. Pellentesque molestie augue quis velit pulvinar, a venenatis ante dapibus. Etiam et tristique nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae lectus non diam dapibus pellentesque vel non leo. Donec sodales faucibus mauris. Nunc hendrerit urna sed ante malesuada consectetur. Donec vestibulum non ligula ac dapibus. Maecenas egestas posuere sem, vel rhoncus sem semper sit amet. Praesent in ipsum quis felis volutpat cursus."
   },
   "projetoBackEnd": {
-    "titulo": "About the project",
+    "titulo": "About the back-end project",
     "description": "Lorem ipsum dolor sit amet, felis volutpat cursus. Lorem ipsum dolor sit amet, felis volutpat cursus. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, felis volutpat cursus. felis volutpat cursus."
+  },
+  "contact": {
+    "title": "Contact",
+    "cards": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/LuigiNeto01/LuigiNeto01",
+        "image": "./src/github.png",
+        "description": {
+          "followers": "Commits: 71",
+          "repos": "Repos: 14"
+        }
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/luiginetoo/",
+        "image": "./src/linkedin.png",
+        "description": {
+          "connections": "Connections: 257",
+          "posts": "Posts: 12"
+        }
+      },
+      {
+        "name": "WhatsApp",
+        "url": "https://wa.me/+5516993917888",
+        "image": "./src/whatsapp.png",
+        "description": "For more direct contact"
+      },
+      {
+        "name": "Email",
+        "url": "mailto:luigicode01@gmail.com",
+        "image": "./src/email.png",
+        "description": "For more professional contacts"
+      }
+    ]
   }
 }

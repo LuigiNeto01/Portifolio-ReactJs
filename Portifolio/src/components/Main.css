@@ -9,6 +9,76 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    transition-duration: 1s;
+    background: #00270b; 
+  }
+  .DarkMode .BotaoFoda{
+    color: white;
+    background-color: #13131F;
+  }
+
+  .BotaoFoda {
+    color: black;
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    -webkit-box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    }
+
+    .BotaoFoda:hover {
+    letter-spacing: 3px;
+    background-color: hsl(130, 100%, 24%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgba(0, 185, 15, 0.63) 0px 7px 29px 0px;
+    }
+
+    .BotaoFoda:active {
+    letter-spacing: 3px;
+    background-color: hsl(130, 100%, 24%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(6, 48, 0) 0px 0px 0px 0px;
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-transition: 100ms;
+    transition: 100ms;
+    }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00A02D; 
+  }
+
+  .DarkMode::-webkit-scrollbar-thumb {
+    transition-duration: 1s;
+    background: #00A02D; 
+  }
+  
+  /* Handle on hover */
+  .DarkMode::-webkit-scrollbar-thumb:hover {
+    background: #004915; 
+  }
+
+
 body {
     transition-duration: 1s;
     margin: 0;
@@ -296,7 +366,6 @@ main {
 .rightHab li {
     text-align: center;
     width: 100%;
-    border: 2px solid;
     list-style: none;
     border-radius: 20px;
     padding: 10px;
@@ -307,12 +376,7 @@ main {
 
 
 
-.rightHab li:hover {
-    font-size: 2em;
-    transition-duration: 0.3s;
-    border: 2px solid #018d29; /* Definindo o estilo da borda */
-    cursor: pointer;
-}
+
 
 .fullarea {
     display: flex;
@@ -443,8 +507,8 @@ main {
 
 .descriptionDisplay li{
     list-style: disc;
+    line-height: 20%;
    
-    
 }
 .descriptionDisplay h2{
     font-weight: 100;
@@ -466,6 +530,11 @@ main {
     background-color: #134b5ce1;
 }
 @media (max-width: 768px) {
+    .BotaoFoda{
+      padding: 7px 30px;
+        width: 100%;
+    }
+
     .TituloHab{
         padding-top: 14%;
     }
@@ -473,16 +542,9 @@ main {
         padding-top: 10%;
     }
     .rightHab li {
-
-      
         font-size: 1.0em;
     }
-    .rightHab li:hover {
-        font-size:1em;
-        transition-duration: 0.3s;
-        border: 2px solid #018d29; /* Definindo o estilo da borda */
-        cursor: pointer;
-    }
+
     .ContactFull{
         display: block;
         justify-content: center;
@@ -575,22 +637,13 @@ main {
         text-align: center;
     }
 
-    .rightHab a {
-        width: 100%;
-        text-align: center;
-    }
 
-    .rightHab a:nth-child(1) {
-        width: 100%;
-        text-align: center;
-    }
+
 
     .rightHab li {
         text-align: center;
-        width: 90%;
-        border: 2px solid;
+        width: 30%;
         list-style: none;
-        border-radius: 20px;
         transition-duration: 0.3s;
     }
 
@@ -598,7 +651,7 @@ main {
         width: 100%;
         padding-top: 0px;
         padding-bottom: 20px;
-        margin-left: 3%;
+        margin-left: 0%;
         text-align: center;
     }
 
@@ -609,11 +662,12 @@ main {
     }
 
     .leftHab {
+        height: 100%;
         width: 100%;
     }
 
     .leftHab img {
-        max-width: 100%;
+        max-width: 90%;
         max-height: 100%;
         width: auto;
         height: auto;
