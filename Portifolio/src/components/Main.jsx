@@ -22,12 +22,12 @@ const MainMenu = () => {
 
     var typewriter = new Typewriter(app, {
       loop: false,
-      delay: 75,
+      delay: 40,
     });
 
     typewriter
       .typeString('Hello, my name is<br /><span className="MeuNome" style="color: #018d29; font-size: 55px;">Luigi Neto Figueiredo</span><br />')
-      
+      .pauseFor(350)
       .typeString(text.areas.frontend)
 
       .pauseFor(350)
